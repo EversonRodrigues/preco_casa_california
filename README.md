@@ -92,42 +92,14 @@ cd nome-do-repositorio
     git clone ENDERECO_DO_REPOSITORIO
     ```
 
-2. Crie um ambiente virtual para o seu projeto utilizando o gerenciador de ambientes de sua preferência.
+2. Crie um ambiente virtual para o projeto utilizando o gerenciador de ambientes de sua preferência.
 
     a. Caso esteja utilizando o `conda`, exporte as dependências do ambiente para o arquivo `environmente.yml`:
 
       ```bash
-      conda env export > ambiente.yml
+      conda env export > environmente.yml
       ```
 
     b. Caso esteja utilizando outro gerenciador de ambientes, exporte as dependências
     para o arquivo `requirements.txt` ou outro formato de sua preferência. Adicione o
     arquivo ao controle de versão, removendo o arquivo `ambiente.yml`.
-
-3. Verifique o arquivo `notebooks/01-fb-exemplo.ipynb` para exemplos
-de uso do código.
-4. Renomeie o arquivo `notebooks/01-fb-exemplo.ipynb` para um nome
-mais apropriado ao seu projeto. E siga a convenção de nomenclatura para os demais
-notebooks.
-5. Remova arquivos de exemplo e adicione os arquivos de dados e notebooks do seu
-projeto.
-6. Verifique o arquivo `notebooks/src/config.py` para configurações básicas do projeto.
-Modifique conforme necessário, adicionando ou removendo caminhos de arquivos e
-diretórios.
-7. Atualize o arquivo `referencias/01_dicionario_de_dados.md` com o dicionário de dados
-do seu projeto.
-8. Atualize o `README.md` com informações sobre o seu projeto.
-9. Adicione uma licença ao projeto. Clique
-[aqui](https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)
-se precisar de ajuda para escolher uma licença.
-10. Renomeie o arquivo `.env.exemplo` para `.env`
-11. Adicione variáveis de ambiente sensíveis ao arquivo `.env`.
-
-Por padrão, o arquivo `.gitignore` já está configurado para ignorar arquivos de dados e
-arquivos de Notebook (para aqueles que usam ferramentas como
-[Jupytext](https://jupytext.readthedocs.io/en/latest/) e similares). Adicione ou remova
-outros arquivos e diretórios do `.gitignore` conforme necessário. Caso deseje adicionar
-forçadamente um Notebook ao controle de versão, faça um commit forçado com o
-comando `git add --force NOME_DO_ARQUIVO.ipynb`.
-
-Para mais informações sobre como usar Git e GitHub, [clique aqui](https://cienciaprogramada.com.br/2021/09/guia-definitivo-git-github/). Sobre ambientes virtuais, [clique aqui](https://cienciaprogramada.com.br/2020/08/ambiente-virtual-projeto-python/).
