@@ -174,3 +174,4 @@ cython_debug/
 
 # VS Code
 .vscode/
+notebooks/03-ERS-GeoPAndas_Folium.ipynb
